@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUSA'S Notepad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="nav-bar"><h1>📝NotePad</h1></div>
+
+    <div class="container">
+        <div class="bookcon">
+        <h2> 📌Rich dad poor dad</h2>
+        <h5>Robert</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tenetur commodi magnam mollitia aliquam doloribus qui a at nemo eveniet illo dolores, veniam officia soluta doloremque voluptates, impedit provident dicta!</p>
+    <button onclick="deletebook(event)">❌</button>
+    </div>
+    </div>
+
+    <button class="add-button" id="add-btn-popup">
+        +
+    </button>
+    <div class="popupoverlay"></div>
+    
+    <div class="popupbox">
+        <h2>Add book</h2>
+        <form>
+            <input type="text" placeholder="Book title" id="book-title-input">
+            <input type="text" placeholder="Book author" id="book-auth">
+            <textarea placeholder="short descrption" id="inputarea"></textarea>
+            <button id="addbtn">✔</button>
+            <button id="can">❌</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
